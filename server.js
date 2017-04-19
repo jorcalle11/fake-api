@@ -30,13 +30,36 @@ router.render = (req, res) => {
         if (limit.length) {
           response.limit = Number(limit[0].split('=')[1]);
         }
-
       }
     }
   }
 
   res.jsonp(response);  
 }
+
+const states = require('./entities/employees_states');
+const workgroupValues = require('./entities/workgroups_values');
+const professions = require('./entities/professions');
+
+server.get('/employees/states', (req, res) => {
+  res.jsonp(states);
+});
+
+server.get('/employees/states/:id', (req, res) => {
+  res.jsonp(states.filter(data => data.id === Number(req.params.id))[0]);
+});
+
+server.get('/employees/states/:id/professions', (req, res) => {
+  res.jsonp({
+    items: professions.filter(data => data.idState === Number(req.params.id))
+  });
+});
+
+server.get('/workgroups/:id/values', (req, res) => {
+  res.jsonp({
+    items: workgroupValues.filter(data => data.idWorkgroup === Number(req.params.id))
+  });
+})
 
 server.use(router)
 server.listen(port, function () {
