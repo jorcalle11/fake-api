@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "casual": "^1.5.12",
     "json-server": "^0.9.6",
     "nodemon": "^1.11.0"
   }
