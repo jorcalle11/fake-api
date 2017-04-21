@@ -1,4 +1,5 @@
 {
+  "/api/v1/me": "/me",
   "/api/v1/users/:id/employees/states" : "/states",
   "/api/v1/users/:id/employees/states/:id/professions" : "/professions",  
   "/api/v1/users/:id/:resource/:id": "/:resource/:id",
