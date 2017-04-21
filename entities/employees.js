@@ -1,5 +1,5 @@
 const casual = require('casual');
-const { cantData } = require('../config');
+const licenses = require('./licenses');
 const employees = [];
 
 casual.define('entity_employee', id => {
@@ -11,16 +11,12 @@ casual.define('entity_employee', id => {
     employeeId: casual.integer(from = 1, to = 1000),
     status: casual.boolean,
     email: casual.email,
-    licenses: []
+    licenses: licenses.slice(casual.integer(from = 0, to = 5),casual.integer(from = 5, to = 10))
   };
 });
 
-for (let i = cantData.employees.start; i <= cantData.employees.end; i++) {
+for (let i = 0; i < 10; i++) {
   employees.push(casual.entity_employee(i));
-
-  for (let j = 0; j <= 2; j++) {
-    employees[i].licenses.push(casual.entity_license);
-  }
 }
 
 module.exports = employees;

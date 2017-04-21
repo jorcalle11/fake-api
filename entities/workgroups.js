@@ -1,5 +1,4 @@
 const casual = require('casual');
-const { cantData } = require('../config');
 const workgroups = [];
 
 casual.define('entity_workgroup', id => {
@@ -9,7 +8,7 @@ casual.define('entity_workgroup', id => {
   };
 });
 
-for (let i = cantData.workgroups.start; i <= cantData.workgroups.end; i++) {
+for (let i = 0; i < 20; i++) {
   workgroups.push(casual.entity_workgroup(i))
 }
 

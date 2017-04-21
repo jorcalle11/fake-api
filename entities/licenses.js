@@ -1,5 +1,4 @@
 const casual = require('casual');
-const { cantData } = require('../config');
 const licenses = [];
 
 casual.define('entity_license', () => {
@@ -13,7 +12,7 @@ casual.define('entity_license', () => {
   };
 });
 
-for (let i = cantData.licenses.start; i <= cantData.licenses.end; i++) {
+for (let i = 0; i < 40; i++) {
   licenses.push(casual.entity_license);
 }
 

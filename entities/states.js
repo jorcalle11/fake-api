@@ -1,5 +1,4 @@
 const casual = require('casual');
-const { cantData } = require('../config');
 const states = [];
 
 casual.define('entity_state', id => {
@@ -10,7 +9,7 @@ casual.define('entity_state', id => {
   };
 });
 
-for (let i = cantData.states.start; i <= cantData.states.end; i++) {
+for (let i = 0; i < 20; i++) {
   states.push(casual.entity_state(i));
 }
 
