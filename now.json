@@ -1,0 +1,8 @@
+{
+  "name": "fake-evercheck-api",
+  "alias": "evercheck.now.sh",
+  "env" : {
+    "NODE_ENV": "production"
+  },
+  "type": "npm"
+}
