@@ -13,7 +13,7 @@ function prettyPrint(argv, object, rules = null) {
 
   if (rules) {
     console.log()
-    console.log(chalk.bold('  Other routes'))
+    console.log(chalk.bold('  Custom routes'))
     for (const rule in rules) {
       console.log(` ${rule} -> ${rules[rule]}`);
       // console.log('  ' + rule + ' -> ' + rules[rule])

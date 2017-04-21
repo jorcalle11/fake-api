@@ -1,0 +1,8 @@
+{
+  "/api/v1/users/:id/employees/states" : "/states",
+  "/api/v1/users/:id/employees/states/:id/professions" : "/professions",  
+  "/api/v1/users/:id/:resource/:id": "/:resource/:id",
+  "/api/v1/users/:id/:resource/": "/:resource/",
+  "/api/v1/users/:id/:workgroups/:id/values": "/workgroupValues"
+}
+
