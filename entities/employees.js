@@ -15,7 +15,7 @@ casual.define('entity_employee', id => {
   };
 });
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 100; i++) {
   employees.push(casual.entity_employee(i));
 }
 
