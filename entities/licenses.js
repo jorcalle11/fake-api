@@ -7,7 +7,7 @@ casual.define('entity_license', () => {
     number: casual.populate('{{letter}}{{letter}}{{integer}}'),
     originalDate: casual.date(format = 'MM-DD-YYYY'),
     expirationDate: casual.date(format = 'MM-DD-YYYY'),
-    label: casual.word,
+    label: casual.random_element(['clearToWork', 'warning', 'takeAction']),
     status: casual.word
   };
 });
