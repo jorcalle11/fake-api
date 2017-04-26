@@ -9,7 +9,7 @@ casual.define('entity_workgroup', id => {
 });
 
 for (let i = 0; i < 20; i++) {
-  workgroups.push(casual.entity_workgroup(i))
+  workgroups.push(casual.entity_workgroup(i));
 }
 
 module.exports = workgroups;

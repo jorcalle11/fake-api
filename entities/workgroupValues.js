@@ -10,7 +10,7 @@ casual.define('entity_workgroup_value', id => {
 });
 
 for (let i = 0; i < 20; i++) {
-  workgroupValues.push(casual.entity_workgroup_value(i))
+  workgroupValues.push(casual.entity_workgroup_value(i));
 }
 
 module.exports = workgroupValues;

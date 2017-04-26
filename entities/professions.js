@@ -11,7 +11,7 @@ casual.define('entity_profession', id => {
 });
 
 for (let i = 0; i < 40; i++) {
-  professions.push(casual.entity_profession(i))
+  professions.push(casual.entity_profession(i));
 }
 
 module.exports = professions;
