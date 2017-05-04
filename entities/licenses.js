@@ -3,7 +3,8 @@ const licenses = [];
 
 casual.define('entity_license', () => {
   return {
-    id : casual.integer(from = 1, to = 1000),
+    id: casual.integer(from = 1, to = 1000),
+    professionId: casual.integer(from = 1, to = 1000),
     number: casual.populate('{{letter}}{{letter}}{{integer}}'),
     originalDate: casual.date(format = 'MM-DD-YYYY'),
     expirationDate: casual.date(format = 'MM-DD-YYYY'),
