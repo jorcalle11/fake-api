@@ -10,9 +10,9 @@ casual.define('entity_user', () => {
     role: casual.word,
     email: casual.email,
     applications : {
-      humanResources: casual.boolean,
+      humanResources: true,
       education: true,
-      credentialing: casual.boolean
+      credentialing: false
     }
   }
 });
