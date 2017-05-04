@@ -6,7 +6,7 @@
 - [Now](https://zeit.co/now)
 
 ## Demo
-[https://fake-evercheck-api-adkdmiiwef.now.sh/](https://fake-evercheck-api-adkdmiiwef.now.sh/)
+[https://fake-evercheck-api-lzygarakdz.now.sh](https://fake-evercheck-api-lzygarakdz.now.sh)
 
 ## Routes
 ```
@@ -43,11 +43,15 @@ GET /api/v1/users/:id/employees
     "middleName": "Teagan",
     "lastName": "Kuhn",
     "employeeId": 340,
-    "status": true,
+    "status": "inactive",
+    "stateId": 16,
+    "professionId": 22,
+    "workgroupValues": 13,
     "email": "Keyshawn_Franecki@yahoo.com",
     "licenses": [
       {
         "id": 606,
+        "professionId": 440,
         "number": "UT506",
         "originalDate": "03-12-2009",
         "expirationDate": "08-02-1989",
@@ -80,7 +84,10 @@ GET /api/v1/users/:id/employees/:id
   "middleName": "Fae",
   "lastName": "Sawayn",
   "employeeId": 760,
-  "status": true,
+  "status": "inactive",
+  "stateId": 16,
+  "professionId": 22,
+  "workgroupValues": 13,
   "email": "Conn.Olen@yahoo.com",
   "licenses": [
     {
