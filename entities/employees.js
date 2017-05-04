@@ -9,7 +9,7 @@ casual.define('entity_employee', id => {
     middleName: casual.first_name,
     lastName: casual.last_name,
     employeeId: casual.integer(from = 1, to = 1000),
-    status: casual.boolean,
+    status: casual.random_element(['active', 'inactive']),
     email: casual.email,
     licenses: licenses.slice(casual.integer(from = 0, to = 5),casual.integer(from = 5, to = 10))
   };
