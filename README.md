@@ -6,7 +6,7 @@
 - [Now](https://zeit.co/now)
 
 ## Demo
-[https://fake-evercheck-api-lzygarakdz.now.sh](https://fake-evercheck-api-lzygarakdz.now.sh)
+[https://fake-evercheck-api-svvymyklfc.now.sh](https://fake-evercheck-api-svvymyklfc.now.sh/)
 
 ## Routes
 ```
@@ -38,35 +38,51 @@ GET /api/v1/users/:id/employees
 ```json
 [
   {
-    "id": 4,
-    "firstName": "Magnus",
-    "middleName": "Teagan",
-    "lastName": "Kuhn",
-    "employeeId": 340,
-    "status": "inactive",
-    "stateId": 16,
-    "professionId": 22,
-    "workgroupValues": 13,
-    "email": "Keyshawn_Franecki@yahoo.com",
-    "licenses": [
+    "id": 0,
+    "firstName": "Wilhelmine",
+    "middleName": "Demarco",
+    "lastName": "Ledner",
+    "fullName": "Wilhelmine Ledner",
+    "number": 54,
+    "active": false,
+    "stateId": 29,
+    "professionId": 35,
+    "workgroupValues": 200,
+    "email": "Jerry_Bahringer@Alex.us",
+    "licenses": {
+    "href": "/employees/0/licenses",
+    "items": [
       {
-        "id": 606,
-        "professionId": 440,
-        "number": "UT506",
-        "originalDate": "03-12-2009",
-        "expirationDate": "08-02-1989",
-        "label": "takeAction",
-        "status": "eos"
+        "id": 980,
+        "employeeId": 160,
+        "state": "Wyoming",
+        "stateCode": "KY",
+        "profession": "Quas quaerat blanditiis",
+        "professionCode": "NOK",
+        "number": "Lu519",
+        "originalDate": "03-18-1981",
+        "expirationDate": "03-08-2006",
+        "label": "clearToWork",
+        "status": "voluptatem",
+        "href": "/licenses/980"
       },
       {
-        "id": 858,
-        "number": "fQ755",
-        "originalDate": "03-19-1989",
-        "expirationDate": "11-28-1987",
-        "label": "takeAction",
-        "status": "sit"
+        "id": 650,
+        "employeeId": 977,
+        "state": "Montana",
+        "stateCode": "OH",
+        "profession": "Doloribus commodi",
+        "professionCode": "BDT",
+        "number": "yv-208",
+        "originalDate": "08-23-1970",
+        "expirationDate": "02-03-1987",
+        "label": "warning",
+        "status": "doloribus",
+        "href": "/licenses/650"
       }
     ]
+    },
+    "href": "/employees/0"
   },
   ...
 ]
@@ -79,34 +95,51 @@ GET /api/v1/users/:id/employees/:id
 
 ```json
 {
-  "id": 2,
-  "firstName": "Amy",
-  "middleName": "Fae",
-  "lastName": "Sawayn",
-  "employeeId": 760,
-  "status": "inactive",
-  "stateId": 16,
-  "professionId": 22,
-  "workgroupValues": 13,
-  "email": "Conn.Olen@yahoo.com",
-  "licenses": [
+  "id": 0,
+  "firstName": "Wilhelmine",
+  "middleName": "Demarco",
+  "lastName": "Ledner",
+  "fullName": "Wilhelmine Ledner",
+  "number": 54,
+  "active": false,
+  "stateId": 29,
+  "professionId": 35,
+  "workgroupValues": 200,
+  "email": "Jerry_Bahringer@Alex.us",
+  "licenses": {
+  "href": "/employees/0/licenses",
+  "items": [
     {
-      "id": 411,
-      "number": "Lm-388",
-      "originalDate": "02-02-1990",
-      "expirationDate": "08-08-2005",
-      "label": "warning",
-      "status": "delectus"
+      "id": 980,
+      "employeeId": 160,
+      "state": "Wyoming",
+      "stateCode": "KY",
+      "profession": "Quas quaerat blanditiis",
+      "professionCode": "NOK",
+      "number": "Lu519",
+      "originalDate": "03-18-1981",
+      "expirationDate": "03-08-2006",
+      "label": "clearToWork",
+      "status": "voluptatem",
+      "href": "/licenses/980"
     },
     {
-      "id": 197,
-      "number": "iF362",
-      "originalDate": "11-08-1977",
-      "expirationDate": "03-09-1988",
+      "id": 650,
+      "employeeId": 977,
+      "state": "Montana",
+      "stateCode": "OH",
+      "profession": "Doloribus commodi",
+      "professionCode": "BDT",
+      "number": "yv-208",
+      "originalDate": "08-23-1970",
+      "expirationDate": "02-03-1987",
       "label": "warning",
-      "status": "dolorem"
+      "status": "doloribus",
+      "href": "/licenses/650"
     }
   ]
+  },
+  "href": "/employees/0"
 }
 ```
 
@@ -120,18 +153,21 @@ GET /api/v1/users/:id/employees/states
 [
   {
     "id": 0,
-    "code": "IL",
-    "name": "Alaska"
+    "code": "HI",
+    "name": "Mississippi",
+    "href": "/states0"
   },
   {
     "id": 1,
-    "code": "NH",
-    "name": "Vermont"
+    "code": "AL",
+    "name": "Illinois",
+    "href": "/states1"
   },
   {
     "id": 2,
-    "code": "LA",
-    "name": "Delaware"
+    "code": "SC",
+    "name": "Arkansas",
+    "href": "/states2"
   },
   ...
 ]
@@ -147,22 +183,24 @@ GET /api/v1/users/:id/employees/states/:id/professions
 [
   {
     "id": 0,
-    "name": "Velit et sint",
-    "stateId": 18,
-    "code": "TX"
+    "name": "Ea velit quo",
+    "stateId": 35,
+    "code": "NE",
+    "boardId": 18,
+    "licenseFormat": "^[0-9]{7}$",
+    "formatExample": "B-66X",
+    "href": "/professions/0"
   },
   {
     "id": 1,
-    "name": "Fugiat aliquam provident",
-    "stateId": 0,
-    "code": "WA"
-  },
-  {
-    "id": 2,
-    "name": "Aut similique et",
-    "stateId": 17,
-    "code": "KY"
-  },
+    "name": "Ad vero ipsam",
+    "stateId": 19,
+    "code": "LA",
+    "boardId": 12,
+    "licenseFormat": "^[0-9]{7}$",
+    "formatExample": "Bm-820",
+    "href": "/professions/1"
+  }
   ...
 ]
 ```
@@ -175,20 +213,32 @@ GET /api/v1/users/:id/licenses
 ```json
 [
   {
-    "id": 200,
-    "number": "Rn-571",
-    "originalDate": "02-29-2008",
-    "expirationDate": "04-16-2014",
-    "label": "clearToWork",
-    "status": "ratione"
+    "id": 418,
+    "employeeId": 990,
+    "state": "Maryland",
+    "stateCode": "VA",
+    "profession": "Reprehenderit occaecati",
+    "professionCode": "RSD",
+    "number": "Yo398",
+    "originalDate": "01-15-2011",
+    "expirationDate": "03-17-1983",
+    "label": "warning",
+    "status": "adipisci",
+    "href": "/licenses/418"
   },
   {
-    "id": 373,
-    "number": "dT-811",
-    "originalDate": "12-03-2002",
-    "expirationDate": "01-29-2013",
+    "id": 254,
+    "employeeId": 383,
+    "state": "Rhode Island",
+    "stateCode": "MT",
+    "profession": "Nisi tempora et",
+    "professionCode": "VND",
+    "number": "ay607",
+    "originalDate": "10-10-1985",
+    "expirationDate": "12-09-2008",
     "label": "warning",
-    "status": "et"
+    "status": "quaerat",
+    "href": "/licenses/254"
   },
   ...
 ]
@@ -203,16 +253,18 @@ GET /api/v1/users/:id/workgroups
 [
   {
     "id": 0,
-    "name": "Ut molestias"
+    "description": "Provident aliquid veniam",
+    "excelColumn": "Br",
+    "href": "/workgroups/0",
+    "workgroupValues": "/workgroups/0/values"
   },
   {
     "id": 1,
-    "name": "Repellendus soluta est"
-  },
-  {
-    "id": 2,
-    "name": "Quasi ut"
-  },
+    "description": "Qui consequatur sed",
+    "excelColumn": "FBu",
+    "href": "/workgroups/1",
+    "workgroupValues": "/workgroups/1/values"
+  }
   ...
 ]
 ```
@@ -225,15 +277,17 @@ GET /api/v1/users/:id/workgroups/:id/values
 ```json
 [
   {
-    "id": 0,
-    "workgroupId": 17,
-    "name": "Qui atque"
+    "id": 44,
+    "workgroupId": 1,
+    "description": "Aut assumenda repellat",
+    "href": "/workgroupValues/44"
   },
   {
-    "id": 1,
-    "workgroupId": 12,
-    "name": "Aliquam pariatur ipsum"
-  },
+    "id": 104,
+    "workgroupId": 2,
+    "description": "Omnis ea quae",
+    "href": "/workgroupValues/104"
+  }
   ...
 ]
 ```
