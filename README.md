@@ -6,7 +6,7 @@
 - [Now](https://zeit.co/now)
 
 ## Demo
-[https://fake-evercheck-api-svvymyklfc.now.sh](https://fake-evercheck-api-svvymyklfc.now.sh/)
+[https://fake-evercheck-api-gkhygsjyts.now.sh](https://fake-evercheck-api-gkhygsjyts.now.sh)
 
 ## Routes
 ```
