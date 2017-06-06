@@ -6,7 +6,7 @@ casual.define('entity_workgroup_value', id => {
   return {
     id,
     workgroupId: casual.integer(from = 0, to = config.WORKGROUPS_SIZE),
-    description: casual.title,
+    description: casual.integer(from = 1000, to = 10000),
     href: `/workgroupValues/${id}`
   };
 });
