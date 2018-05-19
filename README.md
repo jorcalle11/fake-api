@@ -1,14 +1,17 @@
 # Fake Api
 
 ## Stack
-- [Json Server](https://github.com/typicode/json-server)
-- [Casual](https://github.com/boo1ean/casual)
-- [Now](https://zeit.co/now)
+
+* [Json Server](https://github.com/typicode/json-server)
+* [Casual](https://github.com/boo1ean/casual)
+* [Now](https://zeit.co/now)
 
 ## Demo
-[https://fake-evercheck-api-gkhygsjyts.now.sh](https://fake-evercheck-api-gkhygsjyts.now.sh)
+
+[https://fake-evercheck-api-gwwotgcoww.now.sh](https://fake-evercheck-api-gwwotgcoww.now.sh)
 
 ## Routes
+
 ```
 GET /me
 ```
@@ -107,37 +110,37 @@ GET /api/v1/users/:id/employees/:id
   "workgroupValues": 200,
   "email": "Jerry_Bahringer@Alex.us",
   "licenses": {
-  "href": "/employees/0/licenses",
-  "items": [
-    {
-      "id": 980,
-      "employeeId": 160,
-      "state": "Wyoming",
-      "stateCode": "KY",
-      "profession": "Quas quaerat blanditiis",
-      "professionCode": "NOK",
-      "number": "Lu519",
-      "originalDate": "03-18-1981",
-      "expirationDate": "03-08-2006",
-      "label": "clearToWork",
-      "status": "voluptatem",
-      "href": "/licenses/980"
-    },
-    {
-      "id": 650,
-      "employeeId": 977,
-      "state": "Montana",
-      "stateCode": "OH",
-      "profession": "Doloribus commodi",
-      "professionCode": "BDT",
-      "number": "yv-208",
-      "originalDate": "08-23-1970",
-      "expirationDate": "02-03-1987",
-      "label": "warning",
-      "status": "doloribus",
-      "href": "/licenses/650"
-    }
-  ]
+    "href": "/employees/0/licenses",
+    "items": [
+      {
+        "id": 980,
+        "employeeId": 160,
+        "state": "Wyoming",
+        "stateCode": "KY",
+        "profession": "Quas quaerat blanditiis",
+        "professionCode": "NOK",
+        "number": "Lu519",
+        "originalDate": "03-18-1981",
+        "expirationDate": "03-08-2006",
+        "label": "clearToWork",
+        "status": "voluptatem",
+        "href": "/licenses/980"
+      },
+      {
+        "id": 650,
+        "employeeId": 977,
+        "state": "Montana",
+        "stateCode": "OH",
+        "profession": "Doloribus commodi",
+        "professionCode": "BDT",
+        "number": "yv-208",
+        "originalDate": "08-23-1970",
+        "expirationDate": "02-03-1987",
+        "label": "warning",
+        "status": "doloribus",
+        "href": "/licenses/650"
+      }
+    ]
   },
   "href": "/employees/0"
 }
