@@ -4,11 +4,11 @@
 
 * [Json Server](https://github.com/typicode/json-server)
 * [Casual](https://github.com/boo1ean/casual)
-* [Now](https://zeit.co/now)
+* [Heroku](https://www.heroku.com)
 
 ## Demo
 
-[https://fake-evercheck-api-gwwotgcoww.now.sh](https://fake-evercheck-api-gwwotgcoww.now.sh)
+[https://evercheck-fake-api.herokuapp.com/](https://evercheck-fake-api.herokuapp.com/)
 
 ## Routes
 

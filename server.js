@@ -4,7 +4,8 @@ const path = require('path');
 const fs = require('fs');
 
 const prettyPrint = require('./utils');
-const opts = { port: 4000, host: '0.0.0.0' };
+const port = process.env.PORT || 4000;
+const opts = { port, host: '0.0.0.0' };
 
 console.log();
 console.log(chalk.cyan('  \\{^_^}/ hi!'));
